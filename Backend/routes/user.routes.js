@@ -4,14 +4,22 @@ const userRouter=express.Router()
 const jwt=require("jsonwebtoken");
 const bcrypt=require("bcrypt");
 
+
 //register
 userRouter.post("/register",async(req,res)=>{
     try{
         const {name,email,gender,password,age,city,is_married}=req.body;
-        const user=await UserModel.findOne({email});
+        
+        const user=await UserModel.findOne({email})
+        
         if(user){
             res.status(200).send({"msg":"User already exist, please login"})
-        }else{
+           
+        }else if(req.body.password.length<8){
+            res.status(200).send({"msg":"Please enter atleast 8 digit password."})
+            
+        }
+        else{
             bcrypt.hash(password,5,async(err,hash)=>{
                 if(err){
                     res.status(400).send({"msg":err.message})
@@ -22,6 +30,7 @@ userRouter.post("/register",async(req,res)=>{
                 }
             })
         }
+    
 
     }catch(err){
         res.status(400).send({"msg":err.message})
