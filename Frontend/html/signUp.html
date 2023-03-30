@@ -13,21 +13,37 @@
         }
         h1{
             text-align: center;
-            margin-top:100px
+            margin-top:40%;
+            color:black;
+        
         }
         #container{
-            width:25%;
-            height:350px;
-            margin: auto;
-            margin-top: 20px;
-            border:1px solid black;
+             width:50%;
+             height:510px;
+             display:flex;
+             margin:auto;
+             margin-top: 60px; 
             border-radius: 5px;
-            padding: 20px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #box1{
+            width:30%;
+            height:95.4%;
+            border-radius: 5px;
+            padding:10px;
+            background-color: red;
+            
+        }
+        #box2{
+            width:70%;
+            height:95.4%;
+            padding:10px;
+           
         }
         input{
             width:100%;
-            height:40px;
+            height:50px;
+            margin-top:10px;
             margin-bottom:20px;
             border:1px solid black;
             border-radius: 5px;
@@ -36,31 +52,59 @@
             display: block;
             margin: auto;
             width:100%;
-            height:40px;
+            height:50px;
             background-color: red;
             border:none;
             border-radius: 5px;
         
+        }
+        img{
+            width:80%;
+            display: block;
+            margin: auto;
+            margin-top:100%;
+        }
+        #head{
+            width:80%;
+            margin:auto;
+            margin-top:5px;
+
+        }
+        p{
+            font-size: small;
+            color:white;
+            text-align:center;
         }
     </style>
 
 </head>
 <body>
 
-    <h1>SignUp Form</h1>
+    
     <div id="container">
-        <input type="text" id="name" placeholder="Enter name here">
-        <input type="email" id="email" placeholder="Enter email here">
-        <input type="text" id="gender" placeholder="Gender">
-        <input type="number" id="age" placeholder="Age" >
-        <input type="password" id="pass" placeholder="Enter Password">
-        <button onclick="onPress()">Sign Up</button>
+        <div id="box1">
+            <img src="../images/herebuy-text-logo.png" alt="">
+            <div id="head"><p>Explore exciting deals & offers around you</p></div>
+            
+        </div>
+        <div id="box2">
+            <h2>SignUp Here</h2>
+            <input type="text" id="name" placeholder="Enter name here">
+            <input type="email" id="email" placeholder="Enter email here">
+            <input type="text" id="gender" placeholder="Gender">
+            <input type="number" id="age" placeholder="Age" >
+            <input type="password" id="pass" placeholder="Enter Password">
+            <button onclick="onPress()">Sign Up</button>
+        </div>
+        
     </div>
     
 </body>
 </html>
+
 <script>
     const onPress=()=>{
+       
         const user={
             name:document.getElementById("name").value,
             email:document.getElementById("email").value,
@@ -69,7 +113,8 @@
             age:document.getElementById("age").value,
             
         }
-
+         
+        
         fetch("http://localhost:4000/user/register",{
             method:"POST",
             headers:{
@@ -77,12 +122,15 @@
             },
             body:JSON.stringify(user)
         }).then(res=>res.json())
-        .then(res=>console.log(res))
-        .catch(err=>console.log(err))
+        .then(res=>{
+            alert(res.msg)
+            
+        })
+        .catch(err=>alert(err))
+        
 
 
-        alert("User Registered Successfully...!")
-        window.location.href = "./login.html";
+        
      }
 
 
