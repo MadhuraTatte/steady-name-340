@@ -20,6 +20,7 @@
         }).then(res=>res.json())
         .then(res=>{
             alert(res.msg)
+            window.location.href="../html/login.html"
             
         })
         .catch(err=>alert(err))
