@@ -16,7 +16,9 @@
         }).then(res=>res.json())
         .then(res=>{
             alert(res.msg)
+            window.location.href="../html/index.html"
             localStorage.setItem("token",res.token)
+            
         })
         .catch(err=>alert(err))
 
