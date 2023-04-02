@@ -7,169 +7,8 @@
     <title>herebuy.com</title>
     <script src="https://kit.fontawesome.com/63a16aff49.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="../images/nearby-logo.png">
-    <style>
-        *{
-            margin:0px;
-            padding: 0px;
-        }
-        nav{
-            width:100%;
-            height:80px;
-            border:1px solid grey;
-           
-        }
-        #mini{
-            width:100%;
-            height:35%;
-            background-color: #ECEFF1;
-            display: flex;
-            justify-content: space-between;
-        }
-        #box1>div:nth-child(1){
-            margin-left:13px;
-            margin-top:4px;
-            display:flex;
-        }
-        #box1>div:nth-child(1)>p{
-            margin-left:5px;
-            color:grey;
-        }
-        #box1>div:nth-child(2){
-            width:35%;
-            height:80%;
-            border-radius: 15px;
-           border:0.5px solid grey;
-           margin-left:10px;
-           margin-top:1px;
-           color:grey;
-           text-align: center;
-        }
-        #box1>div:nth-child(2)>p{
-            margin-top:2px;
-        }
-        #box1{
-            width:30%;
-           
-            display:flex;
-        }
-        #box2{
-            width:40%;
-            
-            display:flex;
-            justify-content: space-evenly;
-        }
-        #box2>div{
-            margin-top:3px;
-        }
-        #box2>div:nth-child(1){
-            color:red;
-        }
-        #box2>div{
-            color:#616161;
-        }
-        #main{
-            display:flex;
-            justify-content: space-between;
-           
-        }
-        #main>div:nth-child(1){
-            width:11%;
-            height:100%;
-          
-        }
-       #logo{
-        width:100%;
-        height:100%;
-        margin-left: 15px;
-       }
-       #search{
-        margin-right:20px;
-        width:45%;
-       }
-       #search>div{
-        border: 1px solid grey;
-        width:100%;
-        height:80%;
-        margin-top:2px;
-        display:flex;
-        justify-content: space-between;
-       }
-       #s{
-           width:20%;
-           background-color: red;
-           height:100%;
-           text-align: center;
-           color:white;
-       }
-       h4{
-        margin-top: 10px;
-       }
-       #e{
-        display: flex;
-        margin-top: 5px;
-        padding: 5px;
-       }
-       #e>p{
-        margin-left:10px;
-        
-       }
-       #container{
-        display:flex;
-        width:100%;
-        height:120px;
-        border:1px solid grey;
-        padding:5px;
-       }
-       #container>div{
-        
-        width:11%;
-        text-align: center;
-       }
-       #container>div:nth-child(7)>img{
-        width:40%;
-        margin:auto;
-        display:block;
-        margin-top:20px;
-       }
-       #container>div:nth-child(8)>img{
-        width:40%;
-        margin:auto;
-        display:block;
-        margin-top:20px;
-       }
-       #container>div:nth-child(9)>img{
-        width:40%;
-        margin:auto;
-        display:block;
-        margin-top:20px;
-       }
-       #container>div:nth-child(1)>img{
-        width: 40%;
-        margin-top:20px;
-       }
-       #container>div:nth-child(2)>img{
-        width: 40%;
-        margin-top:20px;
-       }#container>div:nth-child(3)>img{
-        width: 40%;
-        margin-top:20px;
-       }#container>div:nth-child(4)>img{
-        width: 40%;
-        margin-top:20px;
-       }#container>div:nth-child(5)>img{
-        width: 40%;
-        margin-top:20px;
-       }#container>div:nth-child(6)>img{
-        width: 40%;
-        margin-top:20px;
-       }
-       #slider{
-        margin-top:30px;
-        border:1px solid red;
-        width:100%;
-        height:100px;
-       }
-    </style>
+    <link rel="stylesheet" href="../styles/index.css">
+    
 </head>
 <body>
     <nav>
@@ -192,7 +31,7 @@
                 <div>|</div>
                 <div>List your Business</div>
                 <div>|</div>
-                <div>Login/Sign Up</div>
+                <div id="register">Login | Sign Up</div>
             </div>
         </div> 
 
@@ -202,7 +41,7 @@
                 <div>
                     <div id="e">
                       <i class="fa-solid fa-magnifying-glass" style="color: #85878a;"></i>
-                      <p>Search restaurants, spa, events</p>
+                      <input type="text" id="text" placeholder="Search restaurants, spa, events">
                     </div>
                     <div id="s"><h4>SEARCH</h4></div>
                 </div>
@@ -224,7 +63,7 @@
             <p>Deals on Nightlife</p>
         </div>
         <div>
-            <img src="https://img4.nbstatic.in/tr:w-/60ac96c840e9df000b6cbf94.png" alt="">
+            <img id="new" src="https://img4.nbstatic.in/tr:w-/60ac96c840e9df000b6cbf94.png" alt="">
             <p>Salon Deals</p>
         </div>
         <div>
@@ -250,11 +89,141 @@
         
     </div>
 
-    <div id="slider">
-       <img src="https://img4.nbstatic.in/tr:w-2800/64213cdf8db992000bb661fb.jpg" alt="">
-       <img src="https://img4.nbstatic.in/tr:w-2800/640976e822b317000b6f9c39.jpg" alt="">
-       <img src="https://img4.nbstatic.in/tr:w-2800/64260da78db992000bb67457.jpg" alt="">
-       <img src="https://img4.nbstatic.in/tr:w-2800/6421663022b317000b54e470.jpg" alt="">
+    <div id="slider"></div>
+    <div id="jackpot"> <img src="https://img4.nbstatic.in/tr:w-2800/640976e822b317000b6f9c39.jpg" alt=""></div>
+    <div id="slider2"></div>
+    <div id="buffet">
+        <h2>Everything Buffet!</h2>
+        <div>
+            <img src="https://img4.nbstatic.in/tr:w-350/63285c0bc10843000be89e58.jpg" alt="">
+            <img src="https://img4.nbstatic.in/tr:w-350/63285c1d54f372000bdf5ea4.jpg" alt="">
+            <img src="https://img4.nbstatic.in/tr:w-350/63285c2fc10843000be89e59.jpg" alt="">
+            <img src="https://img4.nbstatic.in/tr:w-350/63285c40c10843000be89e5a.jpg" alt="">
+        </div>
     </div>
+
+    <div id="slider3">
+        <h2>Top Brands</h2>
+        <div id="imgCard">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/63e5d45a22b317000bc82a18.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/62f53d194183b9000baa42e1.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/63ff3efd22b317000bce7696.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/63ecbabd8db992000be10f6c.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/607557b21e2731000b1ae807.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/6167def31e2731000b10af27.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/637f39f222156b000b1909d5.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/637f3c5622156b000b1909e7.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/636b9d8722b317000b63874a.jpg" alt="">
+            <img class="img1" src="https://img4.nbstatic.in/tr:w-350/63ecbab822b317000bc8479d.jpg" alt="">
+        </div>
+
+        <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="pre"><i class="fa-solid fa-angle-left"></i></button>
+    </div>
+
+    <div id="slider4"></div>
+
+    <div id="slider5">
+        <h2>Popular Hangouts</h2>
+        <div id="imageCard">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/63e5d45a22b317000bc82a18.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/62f53d194183b9000baa42e1.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/63ff3efd22b317000bce7696.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/63ecbabd8db992000be10f6c.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/607557b21e2731000b1ae807.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/6167def31e2731000b10af27.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/637f39f222156b000b1909d5.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/637f3c5622156b000b1909e7.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/636b9d8722b317000b63874a.jpg" alt="">
+            <img class="img2" src="https://img4.nbstatic.in/tr:w-350/63ecbab822b317000bc8479d.jpg" alt="">
+        </div>
+
+        <button id="next1"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="pre1"><i class="fa-solid fa-angle-left"></i></button>
+    </div>
+
+    <div id="slider6">
+        <h2>Quick Bites</h2>
+        <div id="imageCard1">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/6422a2808db992000bb667f1.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/642558c08db992000bb67234.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/642558e822b317000c6fb189.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/642558d422b317000c6fb188.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/636ced9e22b317000b638d9e.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/63ce452422b317000b401bd4.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/642558ff22b317000c6fb18a.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/6425591422b317000c6fb18b.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/6425592822b317000c6fb18c.jpg" alt="">
+            <img class="img3" src="https://img4.nbstatic.in/tr:w-350/63e323f022b317000bc820c7.jpg" alt="">
+        </div>
+
+        <button id="next2"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="pre2"><i class="fa-solid fa-angle-left"></i></button>
+    </div>
+    
+    <div id="slider7"></div>
+
+    <div id="slider8">
+        <h2>Promo Codes for More Savings</h2>
+        <div id="imageCard2">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/6299bae13b031b000ba75db4.jpeg" alt="">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/6294bbe1b3c621000b366b85.jpeg" alt="">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/64273aff8db992000bb67914.jpg" alt="">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/6360396e22156b000cb5df03.jpeg" alt="">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/636038c322156b000cb5df01.jpeg" alt="">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/636039fc22156b000cb5df05.jpeg" alt="">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/63603ad122b317000b73ab32.jpeg" alt="">
+            <img class="img4" src="https://img4.nbstatic.in/tr:w-700/6427506e22b317000c6fb86d.jpg" alt="">
+            
+        </div>
+
+        <button id="next3"><i class="fa-solid fa-angle-right"></i></button>
+        <button id="pre3"><i class="fa-solid fa-angle-left"></i></button>
+    </div>
+
+    <button id="offers">View all Offers</button>
+
+    <footer>
+        <div id="first">
+            <div id="para">
+                <h3>Amazing offers available on nearbuy</h3>
+                <p>nearbuy helps you discover the best things to do, eat and buy – wherever you are! Make every day awesome with nearbuy. Dine at the finest restaurants, relax at the best spas, pamper yourself with exciting wellness and shopping offers or just explore your city intimately… you will always find a lot more to do with nearbuy. From tattoo parlors to music concerts, movie tickets to theme parks, everything you want is now within reach. Don't stop yet! Take it wherever you go with the nearbuy mobile app. Based on your location and preference, our smart search engine will suggest new things to explore every time you open the app. What's more, with offers on everything around you... you are sure to try something new every time.</p>
+            </div>
+            <div id="social">
+                <h2>Follow Us</h2>
+                <div>
+                    <img src="http://res4.nbstatic.in/static/images/social-icons/facebook.svg" alt="">
+                    <img src="http://res4.nbstatic.in/static/images/social-icons/twitter.svg" alt="">
+                    <img src="http://res4.nbstatic.in/static/images/social-icons/instagram.svg" alt="">
+                </div>
+            </div>
+        
+        </div>
+        <div id="second">
+            <div>
+                <h3>Company</h3>
+                <p>About Us</p>
+                <p>Blog</p>
+                <p>Policy</p>
+                <p>Universal Fine Print</p>
+            </div>
+            <div>
+                <h3>Help</h3>
+                <p>Contact Us</p>
+                <p>Site Map</p>
+            </div>
+            <div></div>
+            <div>
+                <h3>Download App</h3>
+                <div>
+                    <img  id="google" src="http://res4.nbstatic.in/static/images/google-play-badges.svg" alt="">
+                    <img src="http://res4.nbstatic.in/static/images/app-store.svg" alt="">
+                </div>
+                <p>Customer Care: +91-7303390416 - 11 AM to 8 PM (MON - SUN)</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
+   <script src="../scripts/index.js"></script>
