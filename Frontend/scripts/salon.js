@@ -44,7 +44,7 @@ let arr1=[
     "https://img4.nbstatic.in/tr:w-2800/627b53ab3b031b000b774d8d.jpg",
     "https://img4.nbstatic.in/tr:w-2800/627b52293b031b000b774d81.jpg",
     "https://img4.nbstatic.in/tr:w-2800/627b53b53b031b000b774d8e.jpg",
-    
+
     ];
     
     let value=0;
@@ -56,4 +56,24 @@ let arr1=[
     value++;
     if(value==arr1.length) value=0;
     },3000);
+
+    let arr2=[
+        "https://img4.nbstatic.in/tr:w-2800/63bfd9aa22b317000b618a68.jpg",
+        "https://img4.nbstatic.in/tr:w-2800/63bfd9a68db992000b7a1872.jpg",
+        "https://img4.nbstatic.in/tr:w-2800/63bfd99b8db992000b7a1871.jpg",
+        "https://img4.nbstatic.in/tr:w-2800/63bfd9a222b317000b618a67.jpg",
+        "https://img4.nbstatic.in/tr:w-2800/63bfd9b822b317000b618a69.jpg",
+        "https://img4.nbstatic.in/tr:w-2800/63bfd9bd22b317000b618a6a.jpg",
+        
+        ];
+        
+        let value1=0;
+        setInterval(()=>{
+        let img=document.createElement("img");
+        img.setAttribute("src",arr2[value1]);
+        document.getElementById("slider3").innerHTML=null;
+        document.getElementById("slider3").append(img);
+        value1++;
+        if(value1==arr2.length) value1=0;
+        },3000);
     

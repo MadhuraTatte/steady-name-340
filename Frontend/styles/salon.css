@@ -273,3 +273,96 @@ margin-top:20px;
      height:100%;
      border-radius: 5px;;
  }
+ #slider3{
+    margin-top:30px;
+    width:100%;
+    background-color:#ECEFF1;
+    height:180px;
+   }
+   #slider3>img{
+    height:80%;
+    margin-top: 15px;;
+    width:100%;
+
+   }
+   #offers{
+    width:170px;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    border:none;
+    border-radius: 30px;
+    color:grey;
+    margin-bottom: 30px;
+    margin-top:30px;;
+  }
+  footer{
+    width:100%;
+    height:200px;
+    border:1px solid black;
+  }
+  #first{
+    width:100%;
+    height:80%;
+    
+    background-color: #455A64;
+    display:flex;
+    color:white;
+  }
+  #para{
+     margin-top:40px;
+     width:80%;
+     margin-left:10px;
+  }
+  #para>h3{
+    margin-bottom: 15px;;
+  }
+  #para>p{
+    font-size: small;
+  }
+  
+  #social>h2{
+    color: grey;
+    margin-top:40px;
+    margin-left: 30px;
+    ;
+  }
+  #social>div{
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    width:18%;
+    
+  }
+  #social>div>img{
+    margin-right:5px;
+  }
+ #second{
+    background-color: black;
+    display:flex;
+    color:white;
+    height:80%;
+
+ }
+ #second>div:nth-child(1){
+    margin-left:10px;
+    margin-top: 25px;;
+ }
+ #second>div:nth-child(2){
+    margin-left:140px;
+    margin-top: 25px;;
+ }
+ #second>div:nth-child(4){
+    margin-left:100px;
+    margin-top: 25px;;
+ }
+ #google{
+    width:30%;
+ }
+ #second>div:nth-child(3){
+    width:0.5px;
+    height:110px;
+    background-color: white;
+    margin-left: 200px;
+    margin-top: 25px;
+ }
