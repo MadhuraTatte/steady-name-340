@@ -118,7 +118,7 @@ let arr2=[
     let text= document.getElementById("text");
     let search=document.getElementById("s")
      search.addEventListener("click",(e)=>{
-    e.preventDefault()
+      e.preventDefault()
     let SearchInp= text.value;
      if(SearchInp=="Restaurant"){
         window.location.href="./Restaurant.html"
@@ -131,3 +131,8 @@ let arr2=[
      }
      
     });
+
+    let salon=document.getElementById("new")
+    salon.addEventListener("click",()=>{
+        window.location.href="../html/Salon.html"
+    })     

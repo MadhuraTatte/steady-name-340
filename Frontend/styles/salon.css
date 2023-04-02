@@ -1,0 +1,275 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+nav{
+    width:100%;
+    height:80px;
+    border:1px solid grey;
+    position: fixed;
+    z-index:2;
+    top:0;
+    background-color: white;
+}
+#mini{
+    width:100%;
+    height:35%;
+    background-color: #ECEFF1;
+    display: flex;
+    justify-content: space-between;
+}
+#box1>div:nth-child(1){
+    margin-left:13px;
+    margin-top:4px;
+    display:flex;
+}
+#box1>div:nth-child(1)>p{
+    margin-left:5px;
+    color:grey;
+}
+#box1>div:nth-child(2){
+    width:35%;
+    height:80%;
+    border-radius: 15px;
+   border:0.5px solid grey;
+   margin-left:10px;
+   margin-top:1px;
+   color:grey;
+   text-align: center;
+}
+#box1>div:nth-child(2)>p{
+    margin-top:2px;
+}
+#box1{
+    width:30%;
+   
+    display:flex;
+}
+#box2{
+    width:40%;
+    
+    display:flex;
+    justify-content: space-evenly;
+}
+#box2>div{
+    margin-top:3px;
+}
+#box2>div:nth-child(1){
+    color:red;
+}
+#box2>div{
+    color:#616161;
+}
+#main{
+    display:flex;
+    justify-content: space-between;
+   
+}
+#main>div:nth-child(1){
+    width:11%;
+    height:100%;
+  
+}
+#logo{
+width:100%;
+height:100%;
+margin-left: 15px;
+}
+#search{
+margin-right:20px;
+width:45%;
+}
+#search>div{
+border: 1px solid grey;
+width:100%;
+height:80%;
+margin-top:2px;
+display:flex;
+justify-content: space-between;
+}
+#text{
+border:none;
+margin-top:-10px;
+width:415px;;
+margin-left:10px;
+
+}
+#s{
+   width:20%;
+   background-color: red;
+   height:100%;
+   text-align: center;
+   color:white;
+}
+h4{
+margin-top: 10px;
+}
+#e{
+display: flex;
+margin-top: 5px;
+padding: 5px;
+}
+#e>p{
+margin-left:10px;
+
+}
+
+#container{
+    display:flex;
+    width:100%;
+    height:120px;
+    border:1px solid grey;
+    padding:5px;
+    margin-top: 10px;;
+   }
+   #container>div{
+    
+    width:11%;
+    text-align: center;
+   }
+   #container>div:nth-child(7)>img{
+    width:40%;
+    margin:auto;
+    display:block;
+    margin-top:20px;
+   }
+   #container>div:nth-child(8)>img{
+    width:40%;
+    margin:auto;
+    display:block;
+    margin-top:20px;
+   }
+   #container>div:nth-child(9)>img{
+    width:40%;
+    margin:auto;
+    display:block;
+    margin-top:20px;
+   }
+   #container>div:nth-child(1)>img{
+    width: 40%;
+    margin-top:20px;
+   }
+   #container>div:nth-child(2)>img{
+    width: 40%;
+    margin-top:20px;
+   }#container>div:nth-child(3)>img{
+    width: 40%;
+    margin-top:20px;
+   }#container>div:nth-child(4)>img{
+    width: 40%;
+    margin-top:20px;
+   }#container>div:nth-child(5)>img{
+    width: 40%;
+    margin-top:20px;
+   }#container>div:nth-child(6)>img{
+    width: 40%;
+    margin-top:20px;
+   }
+
+   #Slider1 {
+    width: 100%;
+     /* border: 2px solid red;  */
+    margin: auto;
+   position: relative;
+   
+  }
+  
+#slider1>h2 {
+margin-left:10px;
+margin-top:20px;
+  }
+  
+#imgCard{
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 40px;
+  
+  }
+  
+  #imgCard>img {
+    margin: 20px;
+    width:10%;
+  
+  }
+  
+  #next {
+    position: absolute;
+    right: -2px;
+    top: 310px;
+    width: 40px;
+    height: 80px;
+    background-color: rgb(219, 213, 213);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: none;
+    opacity: .8;
+  
+  }
+  
+  #pre {
+    position: absolute;
+    left: 0;
+    top: 310px;
+    width: 40px;
+    height: 80px;
+    background-color: rgb(219, 213, 213);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    opacity: .8;
+    border: none;
+  }
+  #slider2{
+    margin-top:30px;
+    width:100%;
+    background-color:#ECEFF1;
+    height:180px;
+   }
+   #slider2>img{
+    height:80%;
+    margin-top: 15px;;
+    width:100%;
+
+   }
+
+   #women{
+    height:220px;
+    width:80%;
+    margin-top:40px;
+    margin-bottom:60px;
+ }
+ #women>h2{
+     margin-left:10px;
+ }
+ #women>div{
+     width:95%;
+     height:90%;
+     display: flex;
+     padding:10px;
+ }
+ #women>div>img{
+     margin-right:20px;
+     width:50%;
+     height:100%;
+     border-radius: 5px;;
+ }
+
+ #men{
+    height:220px;
+    width:80%;
+    margin-top:40px;
+    margin-bottom:60px;
+ }
+ #men>h2{
+     margin-left:10px;
+ }
+ #men>div{
+     width:95%;
+     height:90%;
+     display: flex;
+     padding:10px;
+ }
+ #men>div>img{
+     margin-right:20px;
+     width:50%;
+     height:100%;
+     border-radius: 5px;;
+ }
