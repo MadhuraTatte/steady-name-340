@@ -11,4 +11,4 @@ IA Manager:-Venugopal Burli
 
 Tech Stack Used:-HTML CSS JAVASCRIPT NODE.JS MONGODB MONGOOSE
 
-
+deployed link:-https://soft-sorbet-f1873b.netlify.app/
